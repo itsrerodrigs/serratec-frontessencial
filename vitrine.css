@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 60%; 
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .produto {
@@ -17,9 +17,10 @@
     margin: 8px;
     margin-top: 120px;
     margin-bottom: -60px;
-    padding: 8px;
+    padding: 10px 0;
     background-color: #f0f0f0;
     border-radius: 10px;
+    font-size: 15px;
     text-align: center;
     text-transform: uppercase;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -29,16 +30,17 @@
     transform: scale(1.05);
 }
 
-/*.barra {
+.barra {
     width: 100%;
     height: 10px;
     background-color: #ff69b4;
     margin: 0;
-}*/
+}
 
 .produto img {
     max-width: 100%;
     height: auto;
+    background-image: cover;
     margin-bottom: 0;
 }
 
@@ -69,4 +71,14 @@ input {
 
 span {
     font-weight: bold;
+}
+
+.rodape {
+    background-color: #FDE7EE;
+    color: grey;
+    text-align: center;
+    font-size: 12px;
+    font-style: italic;
+    padding: 8px 0;
+    margin-top: 110px;
 }
