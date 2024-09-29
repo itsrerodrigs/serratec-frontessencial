@@ -1,0 +1,51 @@
+body {
+    background-color: #FDE7EE;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav {
+    position: fixed;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 96px;
+    width: 100%;
+    padding: 16px 40px;
+    background-color: #fff;
+}
+
+nav > ul {
+    list-style: none;
+    text-align: center;
+}
+
+ul li{
+    display: inline-block;
+    padding: 0 33px;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header>nav>div {
+    display:flex;
+    align-items: center;
+}
+
+header>nav>div>img {
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+#login {
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: 700;
+}
