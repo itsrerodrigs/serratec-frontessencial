@@ -2,8 +2,6 @@
     display: flex;
     flex-direction: column; 
     align-items: center; 
-    margin: 20px 0;
-    margin-top: 70px;
 }
 
 .container {
@@ -11,13 +9,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 60%; 
-    max-width: 1200px;
-    margin: 0;
+    margin-bottom: 30px;
 }
 
 .produto {
     width: 28%;
     margin: 8px;
+    margin-top: 120px;
+    margin-bottom: -60px;
     padding: 8px;
     background-color: #f0f0f0;
     border-radius: 10px;
@@ -70,16 +69,4 @@ input {
 
 span {
     font-weight: bold;
-}
-
-@media (max-width: 800px) {
-    .produto {
-        flex: 0 1 calc(50% - 20px);
-    }
-}
-
-@media (max-width: 500px) {
-    .produto {
-        flex: 0 1 calc(100% - 20px);
-    }
 }
