@@ -32,9 +32,15 @@
 
 .barra {
     width: 100%;
-    height: 10px;
-    background-color: #ff69b4;
+    height: 2px;
+    background-color: #DF2F4F;
     margin: 0;
+}
+
+.produto h3 {
+    color: #DF2F4F;
+    font-size: 18px;
+    font-weight: 700px;
 }
 
 .produto img {
