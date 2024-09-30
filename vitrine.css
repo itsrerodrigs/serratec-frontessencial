@@ -1,34 +1,36 @@
 .produtos {
     display: flex;
     flex-direction: column; 
-    align-items: center; 
+    align-items: center;
+    margin-top: 40px;
+    padding: 40px 200px;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 60%; 
+    justify-content: center;
     margin-bottom: 40px;
+    gap: 48px;
 }
 
 .produto {
-    width: 28%;
-    margin: 8px;
-    margin-top: 120px;
-    margin-bottom: -60px;
-    padding: 10px 0;
-    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    box-sizing: border-box;
+    background-color: #fff;
     border-radius: 10px;
-    font-size: 15px;
-    text-align: center;
-    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;    
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.produto:hover {
+/* .produto:hover {
     transform: scale(1.05);
-}
+    z-index: -1;
+} */
 
 .barra {
     width: 100%;
@@ -42,12 +44,13 @@
     font-size: 18px;
     font-weight: 700px;
 }
-
+.produto h3::first-letter {
+    text-transform: uppercase;
+}
 .produto img {
-    max-width: 100%;
-    height: auto;
-    background-image: cover;
-    margin-bottom: 0;
+    width: 250px;
+    height: 184px;
+    object-fit: cover;
 }
 
 .produto .botao-comprar {
@@ -59,6 +62,7 @@
     text-transform: uppercase;
     border-radius: 20px;
     transition: background-color 0.3s;
+    float: right;
 }    
 
 .produto .botao-comprar:hover {
@@ -77,4 +81,24 @@ input {
 
 span {
     font-weight: bold;
+}
+.infos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+}
+.preco {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    font-size: 16px;
+    align-items: center;
+
+}
+
+.divbtn{
+    display: flex;
+    justify-content: center;
+    width: 114px;
 }

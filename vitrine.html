@@ -4,84 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" href="style.css">
-    <title>Vitrine</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="vitrine.css">
     <link rel="stylesheet" href="detalhes.css">
+    <title>Vitrine</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="Home.html"><img src="img/logo.svg" alt="logo"/></a>              
-            <ul>
-                <li><a href="/">Nossos vendedores</a></li>
-                <li><a href="/">Contato</a></li>
-            </ul>
-            <div>
-                <img src="img/Vector.png" />
-                <a href="" id="login">Login</a>
-            </div>
-        </nav>
-    </header>
+    <!--Menu entra aqui via javascript-->
     <div class="faixa-imagem">
         <h1>Nossos Produtos</h1>
     </div>
     <section class="produtos">
         <div class="container">
             <div class="produto">
-                <h3>Bolo Arco-íris</h3>
-                <div class="barra"></div>
+                <h3>bolo arco-íris</h3>
+                <div class="barra"></div>               
                 <img src="img/Bolo_Arco-iris.png" alt="Bolo Arco-íris">
-                <span>R$ 139,00</span>
-                <input type="number" min="1" value="1" class="quantidade">
-                <button onclick="mostrarDescricao(0);" class="botao-comprar">Comprar</button>
+                <div class="infos">
+                    <div class="preco">
+                        <span>R$ 139,00</span>
+                        <input type="number" min="1" value="1" class="quantidade">
+                    </div>
+                    <div class="divbtn">
+                        <button onclick="mostrarDescricao(0);" class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
             </div>
 
         <div class="produto">
-            <h3>Brigadeiro de Paçoca</h3>
-            <div class="barra"></div>
+            <h3>brigadeiro de paçoca</h3>
+            <div class="barra"></div>              
             <img src="img/Brigadeiro_de_Pacoca.png" alt="Brigadeiro de Paçoca">
-            <span>R$ 5,00</span>
-            <input type="number" min="1" value="1" class="quantidade">
+            <div  class="preco">
+                <span>R$ 5,00</span>
+                <input type="number" min="1" value="1" class="quantidade">
+            </div>
             <button onclick="mostrarDescricao(1);" class="botao-comprar">Comprar</button>
         </div>
 
         <div class="produto">
-            <h3>Trufa de Maracujá</h3>
-            <div class="barra"></div>
+            <h3>trufa de maracujá</h3>
+            <div class="barra"></div>               
             <img src="img/Trufa_de_Maracuja.png" alt="Trufa de Maracujá">
-            <span>R$ 8,00</span>
-            <input type="number" min="1" value="1" class="quantidade">
+            <div  class="preco">
+                <span>R$ 8,00</span>
+                <input type="number" min="1" value="1" class="quantidade">
+            </div>
             <button onclick="mostrarDescricao(2);" class="botao-comprar">Comprar</button>
         </div>
 
         <div class="produto">
-            <h3>Torta de Limão</h3>
-            <div class="barra"></div>
+            <h3>torta de limão</h3>
+            <div class="barra"></div>             
             <img src="img/Torta_de_Limao_Siciliano.png" alt="Torta de Limão Siciliano">
-            <span>R$ 89,00</span>
-            <input type="number" min="1" value="1" class="quantidade">
+            <div>
+                <span>R$ 89,00</span>
+                <input type="number" min="1" value="1" class="quantidade">
+            </div>
             <button onclick="mostrarDescricao(3);" class="botao-comprar">Comprar</button>
         </div>
 
         <div class="produto">
-            <h3>Donut de Brigadeiro</h3>
-            <div class="barra"></div>
+            <h3>donut de brigadeiro</h3>
+            <div class="barra"></div>                
             <img src="img/Donut_de_Brigadeiro.png" alt="Donut de Brigadeiro">
-            <span>R$ 12,00</span>
-            <input type="number" min="1" value="1" class="quantidade">
+            <div>
+                <span>R$ 12,00</span>
+                <input type="number" min="1" value="1" class="quantidade">
+            </div>
             <button onclick="mostrarDescricao(4);" class="botao-comprar">Comprar</button>
         </div>
 
         <div class="produto">
-            <h3>Macaroon de Pistache</h3>
-            <div class="barra"></div>
-            <img src="img/Macaroon_de_Pistache.png" alt="Macaroon de Pistache" />
-            <span>R$ 15,00</span>
-            <input type="number" min="1" value="1" class="quantidade" />
+            <h3>macaron de pistache</h3>
+            <hr class="barra">            
+            <img src="img/Macaroon_de_Pistache.png" alt="Macaron de Pistache" />            
+            <div>
+                <span>R$ 15,00</span>
+                <input type="number" min="1" value="1" class="quantidade" />
+            </div>
             <button onclick="mostrarDescricao(5);" class="botao-comprar">Comprar</button>
         </div>
     </div>
@@ -92,6 +96,7 @@
     </footer>
     </section>
     
+    <script src="menu.js"></script>
     <script src="detalhes.js"></script>
 </body>
 </html>
