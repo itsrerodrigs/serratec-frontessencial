@@ -1,0 +1,49 @@
+form {
+
+    height: 300px;
+    background-color: aqua;
+    box-sizing: border-box;
+
+
+}
+
+input {
+    display: inline-block;
+}
+
+#nome {
+
+
+    border-radius: 10px;
+}
+
+#email {
+
+    border-radius: 10px;
+}
+
+#sugestoes {
+    border-radius: 10px;
+
+}
+
+div {
+    margin-top: 5px;
+}
+
+#botao {
+    width: 208px;
+    height: 56px;
+    padding: 16px 72px 16px 72px;
+    gap: 10px;
+    border-radius: 40px 40px 40px 40px;
+    opacity: 0px;
+    background-color: rgba(223, 47, 79, 1);
+    color: white;
+}
+
+#sessao {
+    margin-top: 97px;
+    padding: 40px 80px;
+
+}

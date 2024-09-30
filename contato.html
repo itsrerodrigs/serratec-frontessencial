@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="detalhes.css">
+    <link rel="stylesheet" href="contato.css">
+    <title>Contato</title>
+
+</head>
+<body>
+    
+    <section id="sessao">
+        <div>
+            <h1>Fale Conosco</h1>
+        </div>
+    <form action="servidor/criar" method="get">
+        <div>
+            <label for="nome">Nome Completo: </label>
+            
+            <input type="text" name="nome" id="nome">
+           
+
+           
+            <label for="email">Email</label>
+         
+            <input type="email" name="email" id="email">
+     
+
+            <br />
+            <label for="sugestoes">Sugestões</label>
+            <textarea name="sugestoes" id="sugestoes"></textarea>
+        </div>
+
+        <div>
+            <input id="botao" type="button"value="Enviar">
+        </div>
+
+    </section>
+
+    <script src="menu.js"></script>
+</body>
+</html>
