@@ -78,13 +78,3 @@ input {
 span {
     font-weight: bold;
 }
-
-.rodape {
-    background-color: #FDE7EE;
-    color: grey;
-    text-align: center;
-    font-size: 12px;
-    font-style: italic;
-    padding: 8px 0;
-    margin-top: 110px;
-}
