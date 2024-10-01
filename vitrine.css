@@ -4,7 +4,6 @@
     align-items: center;
     padding: 40px 200px;
 }
-
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +11,6 @@
     margin-bottom: 40px;
     gap: 48px;
 }
-
 .produto {
     display: flex;
     flex-direction: column;
@@ -25,7 +23,6 @@
     text-align: center;    
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
 }
-
 .produto h3 {
     color: #DF2F4F;
     font-size: 18px;
@@ -40,7 +37,6 @@
     object-fit: cover;
     border-top: 2px solid #df2f4f;
 }
-
 .produto .botao-comprar {
     padding: 4px 24px;
     background-color: #00B6F9;
@@ -54,11 +50,9 @@
     transition: background-color 0.3s ease;
     float: right;
 }    
-
 .produto .botao-comprar:hover {
     background-color: #DF2F4F;
 }
-
 input {
     padding: 6px;
     border: 1px solid #ccc;
@@ -68,7 +62,6 @@ input {
     vertical-align: middle;
     margin: 6px;
 }
-
 span {
     font-weight: bold;
 }
@@ -87,7 +80,6 @@ span {
     align-items: center;
     color: #525252;
 }
-
 .divbtn{
     display: flex;
     justify-content: center;
