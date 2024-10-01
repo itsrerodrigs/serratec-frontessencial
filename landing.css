@@ -11,10 +11,23 @@ body{
     justify-content: space-around;
 }
 
+@keyframes pulsar {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
 .cabecalho-imagem{
     width: 18.594vw;      
+    animation: pulsar 2s ease-in-out infinite;
 }
 
+
+/*shadow como contorno*/
 .cabecalho-subtitulo {
     text-align: center;
     font-size: 32px;
@@ -51,7 +64,8 @@ body{
     justify-content: center;
     margin-bottom: 50px;
 }
-.botao{
+
+.botao {
     background-color: #DF2F4F;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -61,12 +75,17 @@ body{
     padding: 24px 7.969vw;
     border-radius: 50px;
     line-height: 24px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transições suaves */
 }
+
 .botao:hover {
-    background-color: #c52843; 
-    opacity: 0.9; 
-    cursor: pointer; 
+    background-color: #D94D6D; /* Cor de fundo ao passar o mouse */
+    color: #FFFFFF; /* Cor do texto ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o botão */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra ao passar o mouse */
+    cursor: pointer; /* Muda o cursor para uma mão */
 }
+
 a {
     text-decoration: none;
     color: white;
