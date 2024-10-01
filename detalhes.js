@@ -116,12 +116,4 @@ function adicionarCarrinho(id){
     atualizarContador();
 }
 
-function atualizarContador() {
-    var carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
-    
-    const totalItens = carrinho.reduce((total, item) => total + item.quantidade, 0);
-
-    document.getElementById("contador").textContent = totalItens;
-}
-
 

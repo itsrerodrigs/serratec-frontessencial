@@ -4,8 +4,9 @@ function carregarMenu() {
         <nav>
             <a href="landing.html"><img src="img/logo.svg" alt="logo"/></a>              
             <ul>
-                <li><a href="/">Quem somos</a></li>
-                <li><a href="/">Contato</a></li>
+                <li><a href="vitrine.html">Produtos</a></li>
+                <li><a href="vendedores.html">Quem somos</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
             <div id="login">
             <div id="carrinho">
@@ -74,6 +75,13 @@ function limparCarrinho() {
     console.log("Carrinho foi esvaziado.");
     atualizarContador();
     abrirCarrinho();
+}
+function atualizarContador() {
+    var carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+    
+    const totalItens = carrinho.reduce((total, item) => total + item.quantidade, 0);
+
+    document.getElementById("contador").textContent = totalItens;
 }
 
 window.onload = carregarMenu();
