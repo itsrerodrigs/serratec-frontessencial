@@ -14,7 +14,6 @@
     border-radius: 30px;
     margin-top: 32px;
 }
-
 .linha-rosa {
     border: none;
     height: 2px;
@@ -30,7 +29,6 @@
     transform: rotate(135deg);
     z-index: -1;
 }
-  
 #voltar {
     display: block;
     width: 920px;
@@ -39,7 +37,6 @@
     font-weight: 500;
     font-size: 14;
 }
-
 #detalhes-img {
     width: 904px;
     height: 350px;
@@ -48,7 +45,6 @@
     background-repeat: no-repeat;
     border-radius: 24px 24px 0 0;
 }
-
 #descricao {
     background-color: #fff;
     border: 1px solid #C8C8C8;
@@ -66,7 +62,6 @@
     color: #DF2F4F;
     font-size: 18px;
     font-weight: 700;
-
     margin-bottom: 16px;
 }
 #adicionar {
