@@ -66,8 +66,7 @@ function descricao(id, nome, descricao, preco, imagem) {
                 <p id="p_descricao">${descricao}</p>
                 <div id="adicionar">
                     <span id="preco_descricao">R$ ${preco},00</span>
-                    <input type="number" name="quantidade" id="quantidade" value="1" min="1" max="100" step="1">
-                    <button onclick="limparCarrinho()">Limpar Carrinho</button>
+                    <input type="number" name="quantidade" id="quantidade" value="1" min="1" max="100" step="1">                    
 
                     <button onclick="adicionarCarrinho(${id})">Adicionar ao carrinho</button>
                 </div>
@@ -123,12 +122,6 @@ function atualizarContador() {
     const totalItens = carrinho.reduce((total, item) => total + item.quantidade, 0);
 
     document.getElementById("contador").textContent = totalItens;
-}
-
-function limparCarrinho() {
-    carrinho = [];
-    localStorage.setItem("carrinho", JSON.stringify(carrinho));
-    console.log("Carrinho foi esvaziado.");
 }
 
 

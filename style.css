@@ -45,7 +45,7 @@ header>nav>div {
     align-items: center;
 }
 
-header>nav>div>img {
+#login>img {
     border-radius: 50%;
     margin-right: 8px;
 }
@@ -93,5 +93,112 @@ header>nav>div>img {
     font-style: italic;
     padding: 8px 0;
     margin-top: 110px;
+}
+
+#carrinho > img {
+    height: 34px;
+    transform: scaleX(-1);
+}
+
+#carrinho {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+#contador {
+position: absolute;
+bottom: 2px;
+right: -3px;
+padding: 1px 3px;
+background-color: white;
+border: 1px solid #df2f4f;
+border-radius: 50%;
+font-size: 12px;
+text-align: center;
+line-height: 1;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-conteudo {
+    position: relative;
+    background-color: #fffeee;
+    margin: 15% auto;
+    padding: 20px;
+    padding-left: 32px;
+    border: 2px solid #df2f4f;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 24px;    
+}
+
+.modal-conteudo::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 2px solid #df2f4f;
+    border-radius: 20px;
+    pointer-events: none;
+}
+
+.modal-conteudo h2, .modal-conteudo th, .modal-conteudo tr:last-child {
+    color: #df2f4f;
+}
+
+.modal-conteudo h2{
+    margin-top: 8px;
+}
+
+.fechar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: #df2f4f;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+.limpar {
+    position: absolute;
+    bottom: 20px;
+    right: 32px;
+}
+
+#tabela-container {
+    display: flex;
+}
+
+#btlimpar {
+    padding: 4px 24px;
+    background-color: #00B6F9;
+    border: none;
+    line-height: 24px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 24px;
+    transition: background-color 0.3s ease;
+    float: right;
 }
   
