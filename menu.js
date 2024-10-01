@@ -14,7 +14,7 @@ function carregarMenu() {
                 <span id="contador">0</span>
             </div>
                 <img src="img/Vector.png" />
-                <a href="">Login</a>
+                <a href="login.html">Login</a>
             </div>
             <input type="checkbox" id="menu-toggle" />
             <label for="menu-toggle" class="menu-icon">
