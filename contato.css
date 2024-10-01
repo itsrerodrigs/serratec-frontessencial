@@ -1,49 +1,75 @@
-form {
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(253, 231, 238, 1); /* Fundo rosa claro */
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 100px;
+}
 
-    height: 300px;
-    background-color: aqua;
+
+.titulo{
+    font-family: Montserrat;
+    font-size: 25px;
+    color:#DF2F4F;
+    display: flex;
+    padding: 40px 80px;
+}
+
+h1{
     box-sizing: border-box;
-
-
 }
 
-input {
-    display: inline-block;
-}
-
-#nome {
-
-
-    border-radius: 10px;
-}
-
-#email {
-
-    border-radius: 10px;
-}
-
-#sugestoes {
-    border-radius: 10px;
-
-}
-
-div {
+.secao{
     margin-top: 5px;
+    padding: 24px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 16px;
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    width: 710px;
+    height: 600px;
 }
 
+textarea{
+    width: 661px;
+    height: 258px;
+    border-radius: 8px;
+    border: 1px solid #939399;
+    margin-top: 5px;
+    padding: 5px;
+}
+.secao-inicial{
+    justify-content: center;
+    display:flex;
+    justify-content:space-between;
+}
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #939399;
+    margin-top: 20px;
+    padding: 10px;
+    justify-content: space-between;
+}
+.secao-botao{
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+}
 #botao {
     width: 208px;
     height: 56px;
-    padding: 16px 72px 16px 72px;
     gap: 10px;
     border-radius: 40px 40px 40px 40px;
     opacity: 0px;
     background-color: rgba(223, 47, 79, 1);
     color: white;
 }
-
-#sessao {
-    margin-top: 97px;
-    padding: 40px 80px;
-
+.secao-sugestao{
+    width: 658px;
+    height: 294px;
 }

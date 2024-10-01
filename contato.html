@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,36 +14,39 @@
     <title>Contato</title>
 
 </head>
+
 <body>
-    
-    <section id="sessao">
-        <div>
-            <h1>Fale Conosco</h1>
-        </div>
-    <form action="servidor/criar" method="get">
-        <div>
-            <label for="nome">Nome Completo: </label>
-            
-            <input type="text" name="nome" id="nome">
-           
+    <div class="titulo">
+        <h1>Fale Conosco</h1>
+    </div>
+    <section class="secao">
+        <form action="servidor/criar" method="get">
 
-           
-            <label for="email">Email</label>
-         
-            <input type="email" name="email" id="email">
-     
-
-            <br />
-            <label for="sugestoes">Sugestões</label>
-            <textarea name="sugestoes" id="sugestoes"></textarea>
-        </div>
-
-        <div>
-            <input id="botao" type="button"value="Enviar">
-        </div>
-
+            <div class="secao-inicial">
+                <div class="secao-nome">
+                    <label for="nome">Nome<span class="asterisco">*</span></label>
+                    <br>
+                    <input type="text" name="nome"  id="nome"  placeholder="Digite seu nome" >
+                </div>
+                
+                <div class="secao-email">
+                    <label for="email">E-mail<span class="asterisco">*</label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="Digite seu melhor e-mail">
+                </div>
+            </div>
+            <br>
+            <div class="secao-sugestao">
+                <label for="sugestoes">Mensagem<span class="asterisco">*</span></label>
+                <br>
+                <textarea name="sugestoes" id="sugestoes"></textarea>
+            </div>
+            <div class="secao-botao">
+                <input id="botao" type="button" value="Enviar">
+            </div>
+        </form>
     </section>
-
     <script src="menu.js"></script>
 </body>
+
 </html>
