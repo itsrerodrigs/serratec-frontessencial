@@ -1,12 +1,12 @@
 function carregarMenu() {
     const menuHTML = `
-        <header>
+    <header>
         <nav>
             <a href="landing.html"><img src="img/logo.svg" alt="logo"/></a>              
-            <ul>
-                <li><a href="vitrine.html">Produtos</a></li>
-                <li><a href="vendedores.html">Quem somos</a></li>
-                <li><a href="contato.html">Contato</a></li>
+            <ul class="menumain">
+                <li><a href="../vitrine.html" id="vitrine">Produtos</a></li>
+                <li><a href="../vendedores.html" id="vendedores">Quem somos</a></li>
+                <li><a href="../contato.html" id="contato">Contato</a></li>
             </ul>
             <div id="login">
             <div id="carrinho">
@@ -16,6 +16,15 @@ function carregarMenu() {
                 <img src="img/Vector.png" />
                 <a href="">Login</a>
             </div>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">
+                &#9776;
+            </label>
+            <ul class="menu">
+            <li><a href="../vitrine.html" id="vitrine">Produtos</a></li>
+            <li><a href="../vendedores.html" id="vendedores">Quem somos</a></li>
+            <li><a href="../contato.html" id="contato">Contato</a></li>
+            </ul>
         </nav>
     </header>
     <div id="modal" class="modal">
@@ -27,6 +36,15 @@ function carregarMenu() {
     </div>
     `;
     document.body.insertAdjacentHTML('afterbegin', menuHTML);
+    const currentPath = window.location.pathname;
+
+    if (currentPath.includes('vitrine.html')) {
+        document.getElementById('vitrine').classList.add('active');
+    } else if (currentPath.includes('vendedores.html')) {
+        document.getElementById('vendedores').classList.add('active');
+    } else if (currentPath.includes('contato.html')) {
+        document.getElementById('contato').classList.add('active');
+    }
 }
 
 function abrirCarrinho() {
