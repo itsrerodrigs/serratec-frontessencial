@@ -65,14 +65,12 @@ label{
 .news input[type="checkbox"] {
     display: none;
 }
-
 .news{
     display: flex;
     align-items: center;
     font-size: 16px;
     cursor: pointer;
 }
-
 .news .checkmark {
     width: 24px;
     height: 24px;
@@ -83,7 +81,6 @@ label{
     display: inline-block;
     border: 2px solid #DF2F4F;
 }
-
 .news .checkmark::after {
     content: "";
     position: absolute;
@@ -96,11 +93,9 @@ label{
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
 }
-
 .news input[type="checkbox"]:checked + .checkmark::after {
     display: block;
 }
-
 .news input[type="checkbox"]:checked + .checkmark {
     background-color: #FF6293;
     border-color: #FF6293;
@@ -129,7 +124,6 @@ label{
 #sugestoes {
     height: 104px;
 }
-
 @media (max-width: 600px) {
     .secao-nome, .secao-email {
         flex-direction: column;
