@@ -5,13 +5,11 @@ body {
     font-weight: 400;
     font-style: normal;
 }
-
 header {
     position: absolute;
     top: 0;
     left: 0;
 }
-
 nav {
     position: fixed;
     box-sizing: border-box;
@@ -23,26 +21,22 @@ nav {
     padding: 16px 40px;
     background-color: #fff;
 }
-
 nav > ul {
     list-style: none;
     text-align: center;
 }
-
 ul li{
     display: inline-block;
     padding: 0 33px;
     font-weight: 700;
 }
-
-a {
+a{
     text-decoration: none;
     color: black;
 }
 nav a.active{
     color: #BE0022;
 }
-
 header>nav>div {
     display:flex;
     align-items: center;
@@ -52,13 +46,11 @@ header>nav>div {
     border-radius: 50%;
     margin-right: 8px;
 }
-
 #login {
     font-size: 14px;
     text-decoration: underline;
     font-weight: 700;
 }
-
 .faixa-imagem {
     position: static;
     display: flex;
@@ -67,7 +59,6 @@ header>nav>div {
     margin-top: 97px;
     height: 159px;     
 }
-
 .faixa-imagem::before {
     position: absolute;
     content: '';
@@ -81,7 +72,6 @@ header>nav>div {
     opacity: 0.6;
     z-index: -1;
 }
-
 .faixa-imagem h1 {
     color: #BE0022;
     font-size: 32px;
@@ -97,31 +87,27 @@ header>nav>div {
     padding: 8px 0;
     margin-top: 110px;
 }
-
 #carrinho > img {
     height: 34px;
     transform: scaleX(-1);
 }
-
 #carrinho {
     position: relative;
     display: inline-block;
     margin-right: 20px;
   }
-  
 #contador {
-position: absolute;
-bottom: 2px;
-right: -3px;
-padding: 1px 3px;
-background-color: white;
-border: 1px solid #df2f4f;
-border-radius: 50%;
-font-size: 12px;
-text-align: center;
-line-height: 1;
+    position: absolute;
+    bottom: 2px;
+    right: -3px;
+    padding: 1px 3px;
+    background-color: white;
+    border: 1px solid #df2f4f;
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1;
 }
-
 .modal {
     display: none;
     position: fixed;
@@ -133,7 +119,6 @@ line-height: 1;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 .modal-conteudo {
     position: relative;
     background-color: #fffeee;
@@ -145,7 +130,6 @@ line-height: 1;
     max-width: 600px;
     border-radius: 24px;    
 }
-
 .modal-conteudo::before {
     content: '';
     position: absolute;
@@ -157,39 +141,32 @@ line-height: 1;
     border-radius: 20px;
     pointer-events: none;
 }
-
 .modal-conteudo h2, .modal-conteudo th, .modal-conteudo tr:last-child {
     color: #df2f4f;
 }
-
 .modal-conteudo h2{
     margin-top: 8px;
 }
-
 .fechar {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
-
 .fechar:hover,
 .fechar:focus {
     color: #df2f4f;
     text-decoration: none;
     cursor: pointer;
 } 
-
 .limpar {
     position: absolute;
     bottom: 20px;
     right: 32px;
 }
-
 #tabela-container {
     display: flex;
 }
-
 #btlimpar {
     padding: 4px 24px;
     background-color: #00B6F9;
@@ -210,20 +187,16 @@ line-height: 1;
 
 /*Menu hamburguer*/
 
-
 #menu-toggle {
     display: none;
 }
-
 #menu-toggle:checked + .menu-icon + .menu {
     display: flex; 
     transform: translateX(0); 
 }
-
 #menu-toggle, .menu-icon {
     display: none;
 }
-
 ul.menu {
     display: flex;
     position: static;
@@ -282,5 +255,4 @@ ul.menu {
     .menumain{
         display: none;
     }
-
 }
