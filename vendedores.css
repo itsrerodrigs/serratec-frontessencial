@@ -4,7 +4,6 @@
     align-items: center;
     padding: 40px 200px;
 }
-
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -22,10 +21,6 @@
     font-size: 18px; 
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
 }
-
-/* .vendedor:hover {
-    transform: scale(1.05);
-} */
 .vendedor h3 {
     color: #DF2F4F;
     font-size: 18px;
