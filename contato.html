@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,44 +8,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="detalhes.css">
     <link rel="stylesheet" href="contato.css">
     <title>Contato</title>
-
 </head>
-
 <body>
-    <div class="titulo">
-        <h1>Fale Conosco</h1>
-    </div>
     <section class="secao">
-        <form action="servidor/criar" method="get">
-
-            <div class="secao-inicial">
-                <div class="secao-nome">
-                    <label for="nome">Nome<span class="asterisco">*</span></label>
-                    <br>
-                    <input type="text" name="nome"  id="nome"  placeholder="Digite seu nome" >
+        <div class="titulo">
+            <h1>Fale Conosco</h1>
+        </div>
+        <div id="divform">
+            <form id="formulario">
+                <div class="secao-inicial">
+                    <div class="secao-nome">
+                        <label for="nome">Nome<span class="asterisco">*</span></label>                    
+                        <input type="text" name="nome"  id="nome"  placeholder="Digite seu nome" >
+                    </div>                    
+                    <div class="secao-email">
+                        <label for="email">E-mail<span class="asterisco">*</label>                            
+                        <input type="email" name="email" id="email" placeholder="Digite seu melhor e-mail">
+                    </div>
                 </div>
-                
-                <div class="secao-email">
-                    <label for="email">E-mail<span class="asterisco">*</label>
-                    <br>
-                    <input type="email" name="email" id="email" placeholder="Digite seu melhor e-mail">
+                <div class="secao-sugestao">
+                    <label for="sugestoes">Mensagem<span class="asterisco">*</span></label>
+                    <textarea name="sugestoes" id="sugestoes" placeholder="Digite sua mensagem"></textarea>
                 </div>
-            </div>
-            <br>
-            <div class="secao-sugestao">
-                <label for="sugestoes">Mensagem<span class="asterisco">*</span></label>
-                <br>
-                <textarea name="sugestoes" id="sugestoes"></textarea>
-            </div>
-            <div class="secao-botao">
-                <input id="botao" type="button" value="Enviar">
-            </div>
-        </form>
+                <div class="secao-news">
+                    <label class="news">
+                        <input type="checkbox" id="custom-checkbox" value="newsletter" checked="checked"/>
+                        <span class="checkmark"></span>                        
+                        Deseja receber nossas newsletter
+                </label>
+                </div>
+                <div class="secao-botao">
+                    <input id="botao" type="submit" value="Enviar" onclick="">
+                </div>
+             </form>
+        </div>
     </section>
+    <footer class="rodape">
+        <hr>
+        <p> Trabalho de Conclusão da disciplina <b>Front-End Essencial</b> do Serratec TIC.
+            <br>Desenvolvido por: Eduarda Pinho, Fernanda Canto, Isabella Pinheiro, Renata Rodrigues, Tiago Ventura, Vinicius Ramos. 
+        </p>
+    </footer>
     <script src="menu.js"></script>
+    <script src="contato.js"></script>
 </body>
 
 </html>

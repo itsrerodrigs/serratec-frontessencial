@@ -2,74 +2,140 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(253, 231, 238, 1); /* Fundo rosa claro */
-    font-family: 'Montserrat', sans-serif;
-    padding-top: 100px;
+    justify-content: center;
 }
-
-
-.titulo{
-    font-family: Montserrat;
-    font-size: 25px;
-    color:#DF2F4F;
-    display: flex;
-    padding: 40px 80px;
-}
-
-h1{
-    box-sizing: border-box;
-}
-
 .secao{
-    margin-top: 5px;
-    padding: 24px;
-    background-color: #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 16px;
-    gap: 16px;
-    display: flex;
-    align-items: center;
-    width: 710px;
-    height: 600px;
+    margin-top: 97px;
+    padding: 40px 80px;
+    color: #5B5B63;
+    width: 90%;
 }
-
+.titulo h1 {
+    margin:0;
+    font-weight: 700;
+    font-size: 32px;
+    color:#DF2F4F;
+}
+#divform {
+    border-radius: 24px;
+    background-color: #fff;
+    margin-top: 32px;
+    padding: 24px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.asterisco{
+    color: #B3261E;
+}
 textarea{
-    width: 661px;
-    height: 258px;
     border-radius: 8px;
-    border: 1px solid #939399;
-    margin-top: 5px;
-    padding: 5px;
+    width: 99%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 8px;
 }
 .secao-inicial{
-    justify-content: center;
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
 }
-input{
-    width: 300px;
-    height: 40px;
+.secao-nome, .secao-email{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+label{
+    display: block;
+}
+.secao-nome input, .secao-email input{
+    height: 56px;
+    width: 100%;
+    box-sizing: border-box;
     border-radius: 8px;
     border: 1px solid #939399;
-    margin-top: 20px;
+    margin-top: 8px;
     padding: 10px;
-    justify-content: space-between;
+    flex: 1;
+}
+.secao-news{
+    display: flex;
+    margin-top: 16px;
+    gap:16px;
+}
+.news input[type="checkbox"] {
+    display: none;
+}
+
+.news{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.news .checkmark {
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: relative;
+    margin-right: 8px;
+    display: inline-block;
+    border: 2px solid #DF2F4F;
+}
+
+.news .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 7px;
+    top: opx;
+    width: 8px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.news input[type="checkbox"]:checked + .checkmark::after {
+    display: block;
+}
+
+.news input[type="checkbox"]:checked + .checkmark {
+    background-color: #FF6293;
+    border-color: #FF6293;
 }
 .secao-botao{
     display: flex;
-    justify-content: right;
+    justify-content: end;
     margin-top: 10px;
 }
 #botao {
     width: 208px;
     height: 56px;
     gap: 10px;
+    border: 0;
     border-radius: 40px 40px 40px 40px;
     opacity: 0px;
     background-color: rgba(223, 47, 79, 1);
     color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
 }
 .secao-sugestao{
-    width: 658px;
-    height: 294px;
+    margin-top: 16px;
+}
+#sugestoes {
+    height: 104px;
+}
+
+@media (max-width: 600px) {
+    .secao-nome, .secao-email {
+        flex-direction: column;
+    }
+    
+    .secao-nome input, .secao-email input {
+        width: 100%;
+    }
 }
