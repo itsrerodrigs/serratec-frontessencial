@@ -2,7 +2,7 @@ function carregarMenu() {
     const menuHTML = `
     <header>
         <nav>
-            <a href="landing.html"><img src="img/logo.svg" alt="logo"/></a>              
+            <a href="../landing.html"><img src="img/logo.svg" alt="logo"/></a>              
             <ul class="menumain">
                 <li><a href="../vitrine.html" id="vitrine">Produtos</a></li>
                 <li><a href="../vendedores.html" id="vendedores">Quem somos</a></li>
