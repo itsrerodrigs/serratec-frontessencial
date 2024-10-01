@@ -61,7 +61,7 @@ function abrirCarrinho() {
             tabelaHTML += `
                 <tr>
                     <td>${produto.nome}</td>
-                    <td>${produto.quantidade}</td>
+                    <td style="text-align:center;">${produto.quantidade}</td>
                     <td>R$ ${produto.preco.toFixed(2)}</td>
                 </tr>`;
             
