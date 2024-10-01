@@ -1,8 +1,8 @@
 document.getElementById("formulario").addEventListener("submit", function(event) {
     event.preventDefault();
 
-    const email = document.getElementById("email").value; // Correto
-    const senha = document.getElementById("senha").value; // Correto
+    const email = document.getElementById("email").value; 
+    const senha = document.getElementById("senha").value; 
 
     const dados = {
         email,
