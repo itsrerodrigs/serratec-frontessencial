@@ -42,7 +42,6 @@ const produtos = [
      "imagem": "img/Macaroon_de_Pistache.png"
  }
 ];
-
 function mostrarDescricao(indice) {
     const produto = produtos[indice];
     const imgDetalhes = document.getElementById("detalhes-img");
@@ -78,7 +77,6 @@ function descricao(id, nome, descricao, preco, imagem) {
         document.getElementById("detalhes-img").style.backgroundPositionY = "-240px";        
     } else{} 
 }
-
 window.addEventListener('popstate', function(event) {
     if (event.state && event.state.produto) {
         const produto = event.state.produto;
@@ -115,5 +113,3 @@ function adicionarCarrinho(id){
 
     atualizarContador();
 }
-
-
