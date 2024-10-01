@@ -1,0 +1,73 @@
+.vendedores{   
+    display: flex;
+    flex-direction: column; 
+    text-transform: uppercase;
+    align-items:center;
+}
+.cargo{
+    text-transform: capitalize;
+}
+.descrição{
+    text-transform: lowercase;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%; 
+}
+.vendedor {
+    width: 28%;
+    margin: 8px;
+    margin-top: 120px;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.vendedor:hover {
+    transform: scale(1.05);
+}
+.vendedor img {
+    max-width: 100%;
+    max-height: 100;
+}
+.barra {
+    width: 100%;
+    height: 6px;
+    background-color: #DF2F4F;
+    margin: 0;
+}
+body {
+    background-color: #FDE7EE;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+nav {
+    position: fixed;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 96px;
+    width: 100%;
+    padding: 16px 40px;
+    background-color: #fff;
+}
+nav > ul {
+    list-style: none;
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+    padding: 0 33px;
+    font-weight: 700;
+}
