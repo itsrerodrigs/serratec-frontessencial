@@ -1,8 +1,3 @@
-//adicionar um id="formulario" na tag form
-//id="nome" no input nome
-//id="email" no input email
-//id="mensagem" na textarea mensagem
-
 document.getElementById("formulario").addEventListener("submit", function(event) {event.preventDefault();
 
     const nome = document.getElementById("nome").value;
@@ -16,7 +11,7 @@ document.getElementById("formulario").addEventListener("submit", function(event)
         mensagem,
         news: check
     };
-
+                                                                                  
     localStorage.setItem("dados", JSON.stringify(dados));
 
     document.getElementById("formulario").reset();
