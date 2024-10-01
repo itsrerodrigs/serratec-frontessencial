@@ -33,7 +33,6 @@
     font-weight: 700;
     margin: 10px 0;
 }
-
 .vendedor h3::first-letter, .vendedor h4::first-letter, .vendedor p::first-letter {
     text-transform: uppercase;
 }
@@ -53,8 +52,7 @@
 .perfil {
     padding: 24px;
 }
-
-.perfil p{
+.perfil p {
     font-weight: 500;
     font-size: 16px;
 }
